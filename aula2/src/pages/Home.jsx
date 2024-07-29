@@ -1,5 +1,5 @@
 import NavBar from '../components/NavBar';
-// import Footer from '../components/Footer';
+import Footer from '../components/Footer';
 import PageContent from '../components/PageContent'
 
 export default function Home(){
@@ -7,7 +7,7 @@ export default function Home(){
     <div className="home">
       <NavBar />
       <PageContent />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

@@ -10,7 +10,7 @@ export default function NavBar(){
     const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ width: 500 }}>
+    <Box sx={{ alignContent: 'space-between' }}>
       <BottomNavigation
         showLabels
         value={value}

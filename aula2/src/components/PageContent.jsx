@@ -2,6 +2,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
+import { Box, Container } from '@mui/material';
 
 const style = {
     p: 0,
@@ -15,12 +16,13 @@ const style = {
 
 export default function PageContent(){
     return (
-      <div className="pagecontent">
+      <Box height={'75vh'} justifyContent={'center'} alignContent ={'center'} display={'flex'}>
+      <Box className="pagecontent">
         <h1>Bom dia</h1>
         <h3>Lista de compras:</h3>
 
         <br/>   
-
+      <Container>
         <List sx={style} aria-label="mailbox folders">
           <ListItem>
             <ListItemText primary="Pacote de amoras" />
@@ -38,6 +40,8 @@ export default function PageContent(){
             <ListItemText primary="Escovas de dente" />
           </ListItem>
         </List>
-      </div>
+        </Container>
+      </Box>
+      </Box>
     )
   }
